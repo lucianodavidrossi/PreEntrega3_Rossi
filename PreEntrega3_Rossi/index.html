@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Préstamo</title>
+</head>
+<body>
+    <h1>Simulador de Préstamo</h1>
+    <div id="formulario">
+        <label for="nombreCompleto">Nombre Completo:</label>
+        <input type="text" id="nombreCompleto">
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad">
+        <br>
+        <button id="botonSiguiente">Siguiente</button>
+    </div>
+    <div id="motivoPrestamoForm" style="display: none;">
+        <label for="motivoPrestamo">Motivo del Préstamo:</label>
+        <select id="motivoPrestamo">
+            <option value="auto">Auto</option>
+            <option value="moto">Moto</option>
+            <option value="casa">Casa</option>
+        </select>
+        <br>
+        <button id="botonSiguiente2">Siguiente</button>
+    </div>
+    <div id="cantidadDineroForm" style="display: none;">
+        <label for="cantidadDinero">Cantidad de Dinero:</label>
+        <input type="number" id="cantidadDinero">
+        <br>
+        <button id="botonSiguiente3">Siguiente</button>
+    </div>
+    <div id="cantidadCuotasForm" style="display: none;">
+        <label for="cantidadCuotas">Cantidad de Cuotas:</label>
+        <input type="number" id="cantidadCuotas">
+        <br>
+        <button id="botonSiguiente4">Calcular</button>
+    </div>
+    <div id="resultado" style="display: none;"></div> <!-- Contenedor para el resultado -->
+
+    <script src="tu_archivo.js" defer></script>
+</body>
+</html>
